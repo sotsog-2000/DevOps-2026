@@ -1,0 +1,13 @@
+GitHub:
+GitHub is a popular web-based platform for hosting and managing source code using Git, a distributed version control system (DVCS).
+It provides tools for collaboration, such as issue tracking, pull requests, and code reviews, making it widely used by developers and teams for open-source and private projects.
+Features of Git  
+●	Tracks history
+●	Free and open source
+●	Supports non-linear development
+●	Creates backups
+●	Scalable
+●	Supports collaboration
+●	Branching is easier
+●	Distributed development
+

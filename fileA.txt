@@ -1,0 +1,13 @@
+Git - Git is used for source code management. It is a free and open-source version control system used to handle small to very large projects efficiently. 
+Git is used to track changes in the source code, to have a History of code and also can track who made the changes.
+It is a distributed version control system (DVCS)
+Source Code Management (SCM):
+Source Code Management, also known as Version Control, is a system that helps developers track and manage changes to their software code. 
+It allows multiple developers to collaborate on a project by keeping a history of code changes, enabling easy rollback to previous versions, and facilitating teamwork without conflicts.
+Version control system (VCS):
+Version control systems are tools that help developers manage changes to their code over time. They allow developers to collaborate on projects, track changes to code, and revert to earlier versions of code if needed.
+Ex: git, svn, clearcase, mercurial, tfs
+Distributed Version Control System (DVCS):
+A Distributed Version Control System is a type of VCS where every contributor has a complete copy of the project's entire history and can work independently. Git is a popular DVCS that enables decentralized collaboration and offline development.
+Ex: git, bitbucket, cloudbees, aws, azure.
+

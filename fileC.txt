@@ -1,0 +1,36 @@
+In the machine CLI
+Configure user email and name
+-	git config --global user.email "you@example.com"
+-	git config --global user.name "Your Name"
+
+Replace "you@example.com" with the email address associated with your GitHub account. This ensures that when you push commits to GitHub, they are linked to your GitHub account. And give any user name.
+
+Create a public key 
+-	ssh-keygen –t rsa –b 4096 –C “your_email_id”
+-t indicates type of key which is rsa type
+-b number of bits of key which is 4096
+-C indicates comment, we can add mail id’s as a comment
+
+When asked for a file location, press Enter to accept the default (~/.ssh/id_rsa).
+Don't set a passphrase for security. Press Enter
+
+Then add the key to the SSH agent:
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+To get the key 
+-          cat <path to key>
+-	e.g - cat /home/user_name/.ssh /id_rsa.pub
+-	copy the public key
+
+Go to Github account
+-	In Github account --- Go to Profile. Click on Settings, click on SSH and GPG keys (Left side of the screen)
+-	Click on Add new ssh key 
+-	Enter the name for the key
+-	Paste the copied key in respective box and save
+
+Test SSH Connection to GitHub
+ssh -T git@github.com
+If successful, you’ll see:
+"Hi your-username! You've successfully authenticated..."
+
