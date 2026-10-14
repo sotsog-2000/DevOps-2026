@@ -1,0 +1,78 @@
+Date:25/09/2026 - class 4
+..............................
+task:
+1. How to search and replace an exact pattern?
+  ex: hello all goog morning
+      goodmorning good morning    
+      
+2. How to search and replace only the 4th occurance of a file in vi editor?
+
+Date:29/09/2026 ---> Class 7
+........................................
+task:
+1. what is the differnce between more , less and cat command
+2. how to check to which usergroup a user belongs to?
+   hint: groups <username>
+2. Explore on free and free -h command
+3. What does this coomand will do----> sudo chgrp <groupname> <file-name>
+4. Can we create a link for files and dir's
+.................................
+
+Links in Linux:
+
+A link is a reference/pointer to a file/dir
+Link allows multiple points to same data without duplicationg same
+..............................................
+
+Types of link:
+
+1. Hard link
+2. Soft link
+
+Hard link:
+
+Hard link is an additional name for an existing file where both the original file and
+the hard link will share the same inode which means they are same files with diff name.
+
+Inode (index node): It is a data structure that stores information about files/dir's size,owner..etc
+
+How to create hardlink?
+
+Synatx: ln <file-name> <link-name>
+
+Note:
+
+1. When we make any change to original file,we can see those changes in the link.
+2. If you rename the original file, the link will still work
+3. If we delete the original file then also a link created from orinal file will work
+
+Soft link:
+
+soft link is a pointer to a file. It does not share same inode as the original file
+
+
+How to create softlink?
+
+Synatx: ln -s <file-name> <link-name>
+
+Note:
+
+1. When we make any change to original file,we can see those changes in the link.
+2. If you rename the original file, the link will not work
+3. If we delete the original file then link will not work
+
+...........................................................
+
+More command:
+
+More command is used used to display all the contents of a file on the terminal page wise
+
+synatx: more <file-name>
+
+Note: 1.Press down arrow key to display the next page content on the terminal
+      2.Use q for quit
+      
+Less command:
+..................................................
+
+3. What is the differance between man and -- help command?
